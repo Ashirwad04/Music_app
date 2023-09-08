@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">sangeet</string>
+    <string name="song_title">Song Title</string>
+    <string name="artist_name">Artist Name</string>
+    <string name="play">Play</string>
+    <string name="ashriwad_kumar">Ashriwad kumar</string>
+    <string name="creater_of_this_aap">Creater of this aap</string>
+    <string name="todo">TODO</string>
+</resources>

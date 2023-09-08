@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The XML declaration specifies the version and encoding of the XML document. -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f0f0f0">
+    <!-- This is the root layout of the Android UI, a RelativeLayout, which contains all other elements. -->
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- This is a header section with a white background. It contains TextViews for song title and artist name. -->
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ashriwad_kumar"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/creater_of_this_aap"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- SeekBar -->
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_layout"
+        android:layout_marginTop="16dp" />
+    <!-- This is a SeekBar for controlling playback progress. It's positioned below the header layout. -->
+
+    <!-- Control Buttons Layout -->
+
+    <!-- Song List -->
+
+    <LinearLayout
+        android:id="@+id/control_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seek_bar"
+        android:layout_marginTop="399dp"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <!-- This is a layout for control buttons like Previous, Play/Pause, and Next. It's positioned below the SeekBar. -->
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/play_pause_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#009688"
+            android:elevation="2dp"
+            android:text="@string/play"
+            android:textColor="#EDE5E5"
+            android:textColorHighlight="#AD2323"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/control_buttons_layout"
+        android:layout_below="@+id/control_buttons_layout"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+    <!-- This is a ListView for displaying a list of songs. It's positioned above the control buttons layout. -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="251dp"
+        android:layout_height="307dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="69dp"
+        android:foregroundGravity="bottom"
+        app:srcCompat="@drawable/musicc"
+        android:contentDescription="@string/todo" />
+</RelativeLayout>
+    <!-- This is an ImageView for displaying an image. It's positioned at the top of the layout and has a music-related image as its source. -->
